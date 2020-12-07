@@ -16,6 +16,7 @@
     "build:es": "BABEL_ENV=es babel --ignore __tests__ -d ./es src",
     "build:umd": "BABEL_ENV=umd babel  --ignore __tests -d ./umd src",
     "prepublish": "npm run build & npm run build:umd & npm run build:es",
+    "postinstall": "npm run build & npm run build:umd & npm run build:es",
     "test": "NODE_ENV=test jest"
   },
   "author": {
