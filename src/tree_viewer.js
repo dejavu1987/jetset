@@ -46,8 +46,8 @@ export default class TreeViewer extends React.Component {
     this.css = null;
   }
   componentDidMount() {
-    this.cssRoot = createLink( 'https://cdn.rawgit.com/glortho/react-treeview/master/react-treeview.css' );
-    this.css = createLink( 'https://cdn.rawgit.com/glortho/react-treeview/master/demos/opinionated.css' );
+    this.cssRoot = createLink( 'https://cdn.jsdelivr.net/gh/glortho/react-treeview@master/react-treeview.css' );
+    this.css = createLink( 'https://cdn.jsdelivr.net/gh/glortho/react-treeview@master/demos/opinionated.css' );
     window.jetset = {
       toggleDevTools: () => this.setState({ show: !this.state.show })
     };
